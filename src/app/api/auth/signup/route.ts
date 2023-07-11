@@ -5,8 +5,8 @@ import bcrypt from "bcryptjs";
 
 export async function POST(request: Request) {
   
-    const { fullname, email, password } = await request.json();
-    console.log(fullname, email, password)
+    const { fullname, email, password, role } = await request.json();
+    console.log(fullname, email, password, role)
 
     if (!password || password.length < 6)
       return NextResponse.json(
@@ -38,6 +38,7 @@ export async function POST(request: Request) {
       fullname,
       email,
       password: hashedPassword,
+      role,
     });
 
     const savedUser = await user.save();

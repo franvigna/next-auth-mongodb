@@ -22,6 +22,10 @@ const userSchema = new Schema({
         minLength:[3,'Fullname must be at least 3 characters'],
         maxLength: [50,'Fullname must be at most 50 characters'],
     },
+    role:{
+        type: String,
+        default: "user",
+    },
 });
 
 const User = models.User || model('User',userSchema)
