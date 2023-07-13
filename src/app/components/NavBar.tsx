@@ -11,7 +11,7 @@ function Navbar() {
     return (
       <nav className="bg-zinc-900 p-4">
         <div className="container mx-auto flex justify-between">
-          <Link href="/">
+          <Link href="/dashboard/profile">
             <h1 className="font-bold text-xl">NextAuth</h1>
           </Link>
 

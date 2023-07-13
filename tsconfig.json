@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/dashboard/profile/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/dashboard/profile/page.jsx", "src/app/components/UserList.jsx", "src/app/api/users/[id]/route.js", "src/app/api/users/route.js"],
   "exclude": ["node_modules"]
 }
